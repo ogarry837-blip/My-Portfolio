@@ -1,1 +1,227 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8ff;
+      color: #243247;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      box-shadow: 0 2px 12px #10264a12;
+    }
+
+    .logo {
+      color: #1769d2;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #243247;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #1769d2;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #e6f0ff, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      color: #1558b0;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 600px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1769d2;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #104c9c;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    section h2 {
+      color: #1558b0;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 5px 22px #10264a0d;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #e2eeff;
+      color: #1558b0;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .project-title {
+      color: #1558b0;
+      margin-bottom: 8px;
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background: #12315c;
+      color: white;
+      padding: 22px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Hello, World! I'm Garry B. Ortiz!</h1>
+      <p>A student learning web development and creating
+        simple, meaningful digital projects.</p>
+      <a class="button" href="#about">Get to Know Me</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+Hello, World! I'm <strong>Garry B. Ortiz</strong>, an IT student at <strong>ICCT Colleges Foundation, Inc.</strong> who loves technology, learning new things, and figuring out why my code isn't working. 😂 My motto: If it works, don't touch it! (Unless it suddenly stops working.)        </p>
+      </div>
+    </section>
+
+ <section id="skills">
+    <h2>My Superpowers ⚡</h2>
+    <div class="skills">
+        <span class="skill">HTML 🧱 — Building the internet, one tag at a time!</span>
+        <span class="skill">CSS 🎨 — Making things pretty since day one.</span>
+        <span class="skill">Python 🐍 — I speak Python, but sometimes it doesn't understand me.</span>
+        <span class="skill">Problem Solving 🧠 — Fixing bugs I may or may not have created.</span>
+        <span class="skill">Teamwork 🤝 — Google is our unofficial team member.</span>
+    </div>
+</section>
+
+ <section id="projects">
+    <h2>My Projects 💻</h2>
+    <div class="card">
+        <h3 class="project-title">Personal Portfolio Website 🚀</h3>
+        <p>
+            A website built with HTML and CSS to show my skills,
+            projects, and learning journey.
+            It took creativity, patience, and a lot of Ctrl + Z! 😂
+            If it looks good, it's a feature. If it breaks, it's a learning experience!
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Let's Connect! 📩</h2>
+    <div class="card">
+        <p>
+           Got an idea? Let’s bring it to life through technology and creativity. 💻
+        </p>
+        <p>
+           My code has two modes: “Why isn’t it working?” and “Don’t touch it, it’s working!” 😂💻
+        </p>
+        <p>Email: ogarry837@gmail.com</p>
+    </div>
+</section>
+  </main>
+
+  <footer>
+<p>&copy; 2026 Garry B. Ortiz. Made with 💙, ☕, and a few debugging sessions.</p>  </footer>
+
+</body>
+</html>
